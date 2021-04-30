@@ -1,0 +1,26 @@
+<ion-content>
+<ion-img src="assets/header.png"></ion-img>
+<ion-back-button  defaultHref="tabs/tab2" class="back-btn-css"></ion-back-button>
+<h2 text-center style="text-transform:uppercase">Set Commands</h2>
+<div padding>
+  <ion-item>
+    <ion-label position="floating">Location</ion-label>
+    <ion-input type="text" [(ngModel)]="location"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Fetch Contact</ion-label>
+    <ion-input type="text" [(ngModel)]="contact"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Ringer Mode</ion-label>
+    <ion-input type="text" [(ngModel)]="ringer"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Lock Device</ion-label>
+    <ion-input type="text" [(ngModel)]="lock"></ion-input>
+  </ion-item>
+
+    <ion-button expand="block" (click)="updateCommands()" style="margin-top:40px">Update<ion-icon slot="start" name="save"></ion-icon></ion-button>
+
+</div>
+</ion-content>
